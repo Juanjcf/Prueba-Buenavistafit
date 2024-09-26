@@ -1,0 +1,56 @@
+/* Estilos para pantallas pequeñas (celulares) */
+@media only screen and (max-width: 600px) {
+    /* Estilos aquí */
+  }
+  
+  /* Estilos para pantallas medianas (tabletas) */
+  @media only screen and (min-width: 601px) and (max-width: 900px) {
+    /* Estilos aquí */
+  }
+  
+  /* Estilos para pantallas grandes (desktops) */
+  @media only screen and (min-width: 901px) {
+    /* Estilos aquí */
+  }
+  @media only screen and (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+    }
+    .navbar ul {
+      flex-direction: column;
+    }
+    .navbar li {
+      width: 100%;
+    }
+  }
+  .logo img {
+    max-width: 50px;
+    height: auto;
+  }
+  @media only screen and (max-width: 600px) {
+    .contenido {
+      padding: 20px;
+    }
+    .texto {
+      font-size: 16px;
+    }
+    .botones {
+      flex-direction: column;
+    }
+    .botones button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    footer {
+      padding: 20px;
+    }
+    footer p {
+      font-size: 14px;
+    }
+    footer img {
+      width: 20px;
+      height: auto;
+    }
+  }
