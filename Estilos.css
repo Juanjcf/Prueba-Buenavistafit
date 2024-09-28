@@ -654,12 +654,12 @@ body {
   margin-top: 280px;
 }
 .map-container iframe {
-  width: 250px;
-  height: 200px;
+  width: 200px;
+  height: 150px;
 }
 .map-container img {
-  width: 250px;
-  height: 200px;
+  width: 200px;
+  height: 150px;
   margin-bottom: 5%;
 }
 .informacioncontacto h3{
