@@ -1,0 +1,926 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+} 
+
+.texto {
+  width: 50%; 
+  text-align: left;
+  margin-left: 20px;
+}
+
+.botones {
+  width: 40%; 
+  text-align: right;
+  margin-right: 20px;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 50px ;
+  font: "Poppins", sans-serif;
+}
+
+
+button:active {
+  background-color: #E7E7E7;
+  box-shadow: inset 0 0 0 1000px #E7E7E7;
+}
+
+.botones button {
+  background-color: #5ee291;
+  color: #333; 
+  border: none; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease-in-out; 
+  border-radius: 20px; 
+  margin: 10px;
+  width: 200px; 
+  height: 100px; 
+  box-sizing: border-box;
+}
+
+.botones button:hover {
+  background-color: rgba(255, 255, 255, 0.8); 
+}
+
+
+.header {
+  min-height: 100vh;
+  background-image: url(img/Fondopagina.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.general {
+  background-image: url(img/Logobuenaivstafit2.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  margin-top: 25px;
+}
+
+.logo {
+  color: rgb(0, 8, 8);
+  font-size: 25px;
+  font-weight: 800;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo img {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+  margin-left: 10px;
+}
+
+.menu .navbar ul li a {
+  font-size: 18px;
+  padding: 20px;
+  color: rgb(0, 7, 7);
+  display: block;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+#menu {
+  display: none;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+.quienes-somosa {
+  min-height: 100vh;
+  background-image: url(img/Fondoqui1.0.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quienes-somosa a {
+  margin-left: 15px;
+}
+
+.imagen-derecha {
+  float: right;
+  margin-left: 6%;
+  margin-right: 5%;
+  margin-bottom: 10%;
+}
+.textoqui {
+  width: 50%; 
+  margin-left: 20px;
+  float: left;
+  font-size: 17px;
+}
+.imagen-derecha img {
+  border-radius: 40px;
+  width: 500px;
+  height: 300px;
+}
+
+.quienes-somosa h2 {
+  margin-bottom: 10px;
+  width: 50%; 
+  text-align: left;
+  margin-left: 20px;
+}
+
+.quienes-somosa p {
+  font-size: 15px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+
+.ppp {
+  font-size: 15px; 
+}
+.fondodietas1 {
+  background-color: #ffd665;
+}
+.fondodietas2 {
+  background-color: #ff6f65;
+}
+.fondodietas3 {
+  background-color: #f5ff65;
+}
+.fondohabitos1 {
+  background-color: rgb(86, 213, 255);
+}
+.fondosalud1 {
+  background-color: mediumseagreen;
+}
+
+.txtintroduciondietas {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+ 
+.txtdietas{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.nutricioninformacion{
+  text-align: center;
+}
+.nutricioninformacion h6{
+  text-align: left;
+}
+
+.macronutrientes{
+  margin-top: 3%;
+}
+
+.micronutrientes{
+ margin-top: 5%;
+ margin-bottom: 5%;
+}
+
+.macronutrientes img {
+  border-radius: 10px; 
+  margin-right: 20px; 
+  float: right;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.micronutrientes img {
+  border-radius: 10px; 
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+  float: left;
+}
+
+.hidratacion img {
+  margin-right: 20px; 
+  float: right;
+  margin-left: 20px;
+  border-radius: 20px;
+}
+.hidratacion img:hover {
+  transform: scale(1.1);
+}
+.macronutrientes img:hover {
+  transform: scale(1.1);
+}
+.micronutrientes img:hover {
+  transform: scale(1.1);
+}
+.hidratacion{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.concejosp img:hover {
+  transform: scale(1.1);
+}
+.d1d {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.d2i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.d2i iframe {
+  margin-right: 10px;
+}
+.concejosp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.concejosp img {
+  margin-right: 10px;
+}
+.concejosp p {
+  margin-right: 5px;
+}
+.infoharv {
+  margin-bottom: 40px;
+}
+.infoharv img {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.infoharv img:hover {
+  transform: scale(1.1);
+}
+.desayuno {
+  float: left;
+}
+.dietasorg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.desayuno, .almuerzo, .cena, .snack {
+  width: 23%; 
+}
+.desayuno{
+  margin-left: 3%;
+}
+.snack{
+  margin-right: 3%;
+}
+.txtsalud{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.txthabitos{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.botonparavolver {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(211, 255, 53, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+.botond {
+  margin-top: 12%;
+  display: flex;
+  align-items: center;
+}
+
+.botonparavolver {
+  margin-right: 10px; 
+}
+
+.svgIcon {
+  width: 24px; 
+  height: 24px;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+.volverd  {
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+.botonparavolver:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: rgb(0, 161, 94);
+  align-items: center;
+}
+
+.botonparavolver:hover .svgIcon {
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+
+.botonparavolver::before {
+  position: absolute;
+  bottom: -20px;
+  content: "De vuelta a inicio";
+  color: white;
+  font-size: 0px;
+}
+
+.botonparavolver:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  transition-duration: 0.3s;
+}
+.botonparavolver-enlace {
+  text-decoration: none;
+  color: inherit;
+}
+.botonparavolver {
+  margin-left: 10px;
+}
+
+.contactosa {
+  background-image: url(img/fondocontacto.jpg);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-top: 40px;
+}
+.headcontacto {
+  background-image: url(img/fondocontacto.jpg);
+}
+.imglinks {
+  float: right;
+  margin-top: 40px;
+  margin-right: 50px;
+}
+.contactosa h2 {
+  margin-bottom: 10px;
+  width: 50%; 
+  text-align: left;
+  margin-left: 20px;
+}
+
+.contactosa h3 {
+  margin-bottom: 10px;
+  width: 50%; 
+  text-align: left;
+  margin-left: 20px;
+}
+
+.contactosa p {
+  font-size: 15px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.map-container {
+  float: right;
+  margin: 10px;
+  border-radius: 10px; 
+}
+.map-container img{
+  width: 500px;
+  height: 290px;
+  margin-left: 15%;
+  margin-right: 5%;
+}
+.informacioncontacto img{
+  border-radius: 10px; 
+}
+
+
+button a {
+  text-decoration: none;
+  color: #333;
+}
+
+
+button:active {
+  background-color: #E7E7E7;
+  box-shadow: inset 0 0 0 1000px #E7E7E7;
+}
+
+.botones button {
+  background-color: #5ee291;
+  color: #333; 
+  border: none; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease-in-out; 
+  border-radius: 20px; 
+  margin: 10px;
+  width: 200px; 
+  height: 100px; 
+  box-sizing: border-box;
+}
+
+.botones button:hover {
+  background-color: rgba(255, 255, 255, 0.8); 
+}
+
+.botones {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.botones2 button {
+  background-color: #5ee291;
+  color: #333; 
+  border: none; 
+  padding: 20px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease-in-out; 
+  border-radius: 20px; 
+  margin: 10px;
+  width: 180px; 
+  height: 77px; 
+  box-sizing: border-box;
+}
+
+.botones2 button:hover {
+  background-color: rgba(255, 255, 255, 0.8); 
+}
+
+.botones2 { 
+  text-align: right;
+  margin-right: 20px;
+}
+
+.introsalud p{
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.txtsalud h2 {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.videossaludy iframe {
+  display: block;
+  margin: 0 auto;
+}
+.saludimgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.saludimgs img {
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 20px;
+}
+.saludimgs img:hover {
+  transform: scale(1.1);
+}
+.saludizq {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.saludizq img {
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 20px;
+}
+.saludizq img:hover {
+  transform: scale(1.1);
+}
+
+.introhabitos{
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.llli {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.llli img {
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 20px;
+}
+.llli img:hover {
+  transform: scale(1.1);
+}
+
+
+.volverd {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(211, 255, 53, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+.botond {
+  margin-top: 12%;
+  display: flex;
+  align-items: center;
+}
+
+.volverd {
+  margin-right: 10px; 
+}
+
+.svgIcon {
+  width: 24px; 
+  height: 24px;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.volverd:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: rgb(0, 161, 94);
+  align-items: center;
+}
+
+.volverd:hover .svgIcon {
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+
+.volverd::before {
+  position: absolute;
+  bottom: -20px;
+  content: "De vuelta a inicio";
+  color: white;
+  font-size: 0px;
+}
+
+.volverd:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  transition-duration: 0.3s;
+}
+.volverd-enlace {
+  text-decoration: none;
+  color: inherit;
+}
+
+.volverd2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(211, 255, 53, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.volverd2 {
+  margin-right: 10px; 
+}
+
+.volverd2:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: rgb(0, 161, 94);
+  align-items: center;
+}
+
+.volverd2:hover .svgIcon {
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+
+.volverd2::before {
+  position: absolute;
+  bottom: -20px;
+  content: "De vuelta a atras";
+  color: white;
+  font-size: 0px;
+}
+
+.volverd2:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  transition-duration: 0.3s;
+}
+.volverd2-enlace {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer img {
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #2ae471;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #000000;
+  clear: both;
+}
+
+footer a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+footer a:hover {
+  color: #23527c;
+}
+
+.navbar ul li a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #06d455;
+}
+.imglinks img {
+  color: #c40000;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #06d455;
+}
+
+
+@media only screen and (max-width: 600px) {
+  
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.header {
+  min-height: 100vh;
+  background-image: url(img/Fondopagina.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.menu {
+  margin-top: 25px;
+  margin-right: 10px;
+}
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: transparent;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+
+.menu a:hover {
+  color: #333;
+}
+.texto {
+  margin-top: 300px;
+  text-align: center;
+  width: 57%;
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.botones  {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.botond {
+  margin-top: 300px;
+  margin-left: 50px;
+}
+
+.textoqui p {
+  text-align: center; 
+  width: 180%;
+  margin-bottom: 5px;
+}
+
+.textoqui {
+  margin-bottom: 10%;
+}
+
+.imagen-derecha img {
+  width: 290px;
+  height: 190px;
+  margin-bottom: 15%;
+  margin-right: 30px;
+}
+.contactosa {
+  margin-top: 280px;
+}
+.map-container iframe {
+  width: 250px;
+  height: 200px;
+}
+.map-container img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5%;
+}
+.informacioncontacto h3{
+  text-align: center;
+  width: 85%;
+}
+.agradecimientostxt{
+  text-align: center;
+}
+.volverd {
+  margin-left: 5px;
+}
+.volverd {
+  margin-top: 200px;
+}
+
+.nutricioninformacion{
+  margin-top: 25px;
+}
+.dietasorg {
+  text-align: center;
+}
+
+.desayuno{
+  margin-left: 0%;
+}
+.almuerzo{
+  margin-right: 0%;
+  margin-left: 0%;
+
+}
+.cena{
+  margin-right: 0%;
+  margin-left: 0%;
+
+}
+.snack{
+  margin-right: 0%;
+}
+.imglinks {
+  margin-top: 220px;
+}
+.informacioncontacto img {
+  width: 250px;
+  height: 200px;
+}
+.solopalmovil{
+  margin-top: 200px;
+}
+.d1d {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.d1d iframe {
+  width: 280px ;
+  height: 157px ;
+}
+.d2i iframe {
+  width: 280px ;
+  height: 157px ;
+  margin-top: 50px;
+}
+
+
+}
